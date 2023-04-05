@@ -1136,23 +1136,42 @@
 }
 
 aside {
-  left: -225px;
-}
-
-aside.active {
   background: rgb(168, 223, 255);
   position: fixed;
   top: 0;
   left: 0;
   width: 60%;
-  height: 100vh;
+  height: 98vh;
   padding: 10px 0 0 0;
   overflow-y: scroll;
   transition: all 0.5s ease;
+  left: -60%;
+  scrollbar-width: auto;
+  scrollbar-color: #262d8c rgb(168, 223, 255);
+  /* Chrome, Edge, and Safari */
+}
+
+aside::-webkit-scrollbar {
+  width: 10px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: rgb(168, 223, 255);
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #686ca8;
+  border-radius: 6px;
+  border: 2px solid rgb(168, 223, 255);
+}
+
+aside.active {
+  left: 0;
 }
 
 .aside-index {
   margin-top: 30px;
+  padding-bottom: 30px;
   height: 100%;
 }
 
@@ -1166,8 +1185,13 @@ body {
     margin: 40px;
   }
 
-  aside.active {
+  aside {
     width: 280px;
+    left: -280px;
+  }
+
+  aside.active {
+    left: 0;
   }
 
   .indice-btn {
