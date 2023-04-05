@@ -1177,10 +1177,18 @@ aside.active {
 
 
 body {
-  margin: 16px;
+  margin: 8px;
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (max-width: 420px) {
+  img {
+    width: 100%;
+    max-width: 320px;
+    max-height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   body {
     margin: 40px;
   }
@@ -1204,19 +1212,19 @@ body {
   }
 }
 
-@media screen and (min-width: 720px) {
+@media only screen and (min-width: 720px) {
   body {
     margin: 80px;
   }
 }
 
-@media screen and (min-width: 920px) {
+@media only screen and (min-width: 920px) {
   body {
     margin: 200px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   body {
     margin: 300px;
   }
