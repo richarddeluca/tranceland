@@ -1216,11 +1216,19 @@ body {
   body {
     margin: 80px;
   }
+
+  .calibre {
+    font-size: 1.25em;
+  }
 }
 
 @media only screen and (min-width: 920px) {
   body {
     margin: 200px;
+  }
+
+  .calibre {
+    font-size: 1.5em;
   }
 }
 
@@ -1228,4 +1236,9 @@ body {
   body {
     margin: 300px;
   }
+}
+
+@page {
+  margin-bottom: 5pt;
+  margin-top: 5pt
 }
